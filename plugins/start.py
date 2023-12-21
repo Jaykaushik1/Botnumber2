@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("😊 About Me", callback_data = "about_bot"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
@@ -111,6 +111,11 @@ async def start_command(client: Client, message: Message):
 #=====================================================================================##
 
 WAIT_MSG = """"<b>Processing ...</b>"""
+
+about_bot = """"<b>
+○ Creator : <a href="https://t.me/as_3523">This Person</a>
+○ Language : Python3
+○ Library : Pyrogram asyncio 2.0.106</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
 
